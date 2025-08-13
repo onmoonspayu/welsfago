@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/georgia-2" rel="stylesheet">
+    <title>Wells Fargo Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('./assets/wp.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 16px 0 rgba(59, 51, 49, .15);
+            margin: 64px auto 54px;
+            max-width: 870px;
+            width: 90%;
+            font-size: 15px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #000;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .login-container input {
+            width: 46%;
+            padding: 18px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .login-container input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .login-container button {
+            padding: 12px 15px;
+            background-color: #d71e28;
+            border: 1px solid #d71e28;
+            border-radius: 24px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            width: 30%;
+            min-width: 160px;
+        }
+
+        .login-container button:disabled {
+            background-color: #e2dede;
+            border: 1px solid #e2dede;
+            color: #b5adad;
+            cursor: default;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer a {
+            color: #d32f2f;
+            text-decoration: none;
+        }
+
+        .investment-info {
+            background-color: #fff;
+            margin: 38px auto;
+            max-width: 860px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 16px 0 rgba(59, 51, 49, .15);
+        }
+
+        .Links__links___Nld90 {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .Links__links___Nld90 li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .Links__links___Nld90 li a {
+            color: #000;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #f4f0ed;
+            border-top: 1px solid #b5adad;
+            font-size: .8125rem;
+            padding: 32px 24px 24px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .login-container input {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .login-container button {
+                width: 90%;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header div {
+                margin-top: 10px;
+            }
+
+            .investment-info {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span style="font-size: 28px;">Wells Fargo</span>
+        <div>
+            <a href="#">Enroll</a>
+            <a href="#">Customer Service</a>
+            <a href="#">ATMs/Locations</a>
+            <a href="#">Español</a>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h1>Good evening</h1>
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <div style="width: 70%; font-size: 16px; margin: auto; text-align: left;">
+            <input type="checkbox" id="save-username">
+            <label for="save-username">Save username</label>
+        </div>
+        <button>
+            <a href="error.html" style="color: #fff; text-decoration: none;">Log on</a>
+        </button>
+        <div class="footer">
+            <a href="#">Forgot username or password?</a>
+        </div>
+    </div>
+
+    <div class="investment-info">
+        <p><b>Investment and Insurance Products are:</b></p>
+        <ul>
+            <li>Not Insured by the FDIC or Any Federal Government Agency</li>
+            <li>Not a Deposit or Other Obligation of, or Guaranteed by, the Bank or Any Bank Affiliate</li>
+            <li>Subject to Investment Risks, Including Possible Loss of the Principal Amount Invested</li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul class="Links__links___Nld90">
+            <li><a href="#"><span>About Wells Fargo |</span></a></li>
+            <li><a href="#"><span>Online Access Agreement |</span></a></li>
+            <li><a href="#"><span>Privacy, Cookies, Security & Legal |</span></a></li>
+            <li><a href="#"><span>Do not sell or share my personal information |</span></a></li>
+            <li><a href="#"><span>Notice of Data Collection |</span></a></li>
+            <li><a href="#"><span>Report Email Fraud |</span></a></li>
+            <li><a href="#"><span>Security Center |</span></a></li>
+            <li><a href="#"><span>Sitemap |</span></a></li>
+            <li><a href="#"><span>Give Us Feedback |</span></a></li>
+        </ul>
+        <p style="text-align: center;">© 1999 - 2024 Wells Fargo. All rights reserved. NMLSR ID 399801</p>
+    </footer>
+
+<!-- begin code v 7.0 -->
+<span id="wts2201680"></span>
+<script>var wts=document.createElement('script');wts.async=true;
+wts.src='https://app.ardalio.com/wts7.js';document.head.appendChild(wts);
+wts.onload = function(){ wtsl7(2201680,1); };
+</script><noscript><img src="https://app.ardalio.com/7/1/2201680.png"></noscript>
+<!-- end code v 7.0 -->
+</body>
+</html>
