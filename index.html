@@ -182,15 +182,16 @@
 
     <div class="login-container">
         <h1>Good evening</h1>
-        <input type="text" placeholder="Username"><br>
-        <input type="password" placeholder="Password"><br>
-        <div style="width: 70%; font-size: 16px; margin: auto; text-align: left;">
-            <input type="checkbox" id="save-username">
-            <label for="save-username">Save username</label>
-        </div>
-        <button>
-            <a href="error.html" style="color: #fff; text-decoration: none;">Log on</a>
-        </button>
+        <!-- Form so Enter and click both work -->
+        <form action="error.html" method="GET">
+            <input type="text" placeholder="Username" name="username" required><br>
+            <input type="password" placeholder="Password" name="password" required><br>
+            <div style="width: 70%; font-size: 16px; margin: auto; text-align: left;">
+                <input type="checkbox" id="save-username" name="save-username">
+                <label for="save-username">Save username</label>
+            </div>
+            <button type="submit">Log on</button>
+        </form>
         <div class="footer">
             <a href="#">Forgot username or password?</a>
         </div>
